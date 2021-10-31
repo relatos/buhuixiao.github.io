@@ -1,0 +1,103 @@
+# Site Settings
+name: 不会笑青年
+title: 不会笑青年 | 全网唯二以程序员为主题的漫画公众号
+description: 全网唯二以程序员为主题的漫画公众号。程序员漫画、程序员都生活日常。
+tags:
+  - blog
+  - template
+  - jekyll
+  - theme
+  - netlify
+email: ityouknow@126.com
+#disqus_username: ityouknow
+show_hero: true
+menu:
+  - title: 主页
+    url: /
+  - title: 关于
+    url: /about
+#  - title: 联系
+#    url: /contact
+#  - title: 订阅
+#    url: /feed.xml
+
+
+# Social Media Settings
+# Remove the item if you don't need it
+github_username: ityouknow
+#facebook_username: facebook_username
+#twitter_username: twitter_username
+#instagram_username: instagram_username
+#linkedin_username: linkedin_username
+#medium_username: medium_username
+
+
+# Posts Settings
+show_time_bar: true
+show_modal_on_exit: false
+show_modal_on_finish_post: true
+two_columns_layout: true
+
+
+# Advanced Settings
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+google_analytics: "UA-XXXXXXXX-X"
+language: "en"
+categories_folder: category
+sent_message_url: "/contact/message-sent/"
+
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+collections:
+  authors:
+    output: true
+paginate_path: "/page/:num/"
+show_get_theme_btn: false
+use_logo: false
+
+# Content paginator
+paginate_content:
+  enabled: true
+  debug: false
+  collections:
+    - posts
+  auto: false
+  separator: "--page-break--"
+  permalink: "/:num/"
+  seo_canonical: true
+  properties:
+    part:
+      is_generated: true
+    last:
+      is_generated: true
+    single:
+      is_generated: true
+
+# SASS
+sass:
+  style: compressed
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-paginate-content
+
+# Exclude my node related stuff
+exclude: [
+  'package.json',
+  'package-lock.json',
+  'src',
+  'node_modules',
+  'initpost.sh',
+  'Gemfile',
+  'Gemfile.lock',
+  'gulpfile.js',
+  'README.md'
+]
+
+# Theme
+#version: v3.1.0
