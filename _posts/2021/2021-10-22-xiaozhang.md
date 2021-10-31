@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 嚣张同事：等我退休了，也去写前端？！真的让人忍无可忍...
+title: 嚣张同事：等我退休了，也去写前端？！真的让人忍无可忍
 subtitle: 沉默终将爆发！
 description: 沉默终将爆发！
 image: http://favorites.ren/assets/images/2021/cartoon/xiaozhang/0.jpg
